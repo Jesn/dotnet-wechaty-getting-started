@@ -19,7 +19,7 @@ namespace wechaty_getting_started
 #endif
                 .MinimumLevel.Override("Microsoft", LogEventLevel.Information)
                 .Enrich.FromLogContext()
-                .WriteTo.File("Logs/logs.txt")
+                .WriteTo.File("Logs/logs.txt",rollingInterval:RollingInterval.Day)
                 .WriteTo.Console()
                 .CreateLogger();
 
