@@ -1,36 +1,36 @@
 # dotnet-wechaty-getting-started
 
-# Æô¶¯·½Ê½
+# å¯åŠ¨æ–¹å¼
 
-* Ò»¡¢Í¨¹ı visual studio Ö±½ÓÆô¶¯
+* ä¸€ã€é€šè¿‡ visual studio ç›´æ¥å¯åŠ¨
       
-    1¡¢ÔÚ`appsettings.json`ÖĞÅäÖÃ¶ÔÓ¦µÄtokenĞÅÏ¢
+    1ã€åœ¨`appsettings.json`ä¸­é…ç½®å¯¹åº”çš„tokenä¿¡æ¯
     
-    2¡¢Í¨¹ı`launchSettings.json`ÉèÖÃµ÷ÊÔ»·¾³±äÁ¿
+    2ã€é€šè¿‡`launchSettings.json`è®¾ç½®è°ƒè¯•ç¯å¢ƒå˜é‡
     
 
-* ¶ş¡¢Í¨¹ıMakefileÆô¶¯
+* äºŒã€é€šè¿‡Makefileå¯åŠ¨
 
-    1¡¢¼ì²â`dotnet  --version`ÃüÁî¼ì²âÊÇ·ñ°²×°ÁËdotnet core sdk
+    1ã€æ£€æµ‹`dotnet  --version`å‘½ä»¤æ£€æµ‹æ˜¯å¦å®‰è£…äº†dotnet core sdk
 
-      Èç¹ûÃ»ÓĞ°²×°ÔòÍ¨¹ı https://docs.microsoft.com/en-us/dotnet/core/install/ ¸ÃÁ´½ÓÏÂÔØ¶ÔÓ¦µÄ.net core sdk
+      å¦‚æœæ²¡æœ‰å®‰è£…åˆ™é€šè¿‡ https://docs.microsoft.com/en-us/dotnet/core/install/ è¯¥é“¾æ¥ä¸‹è½½å¯¹åº”çš„.net core sdk
     
-    2¡¢ÉèÖÃ»·¾³±äÁ¿
+    2ã€è®¾ç½®ç¯å¢ƒå˜é‡
     ```
     export Wechaty_Token=youre wechaty token
     ```
     
-    3¡¢ÔËĞĞMakFileÃüÁî
+    3ã€è¿è¡ŒMakFileå‘½ä»¤
     ```
     make all
     ```
 
-* Èı¡¢Í¨¹ıDockerÆô¶¯
+* ä¸‰ã€é€šè¿‡Dockerå¯åŠ¨
      
-    1¡¢Í¨¹ı`launchSettings.json`ÉèÖÃµ÷ÊÔ»·¾³±äÁ¿
+    1ã€é€šè¿‡`launchSettings.json`è®¾ç½®è°ƒè¯•ç¯å¢ƒå˜é‡
 
-    2¡¢Í¨¹ıÒÑ¾­ÉÏ´«µÄdocker¾µÏñÔËĞĞ
+    2ã€é€šè¿‡å·²ç»ä¸Šä¼ çš„dockeré•œåƒè¿è¡Œ
     ```
     docker pull registry.cn-shanghai.aliyuncs.com/wechaty/dotnet-wechaty
-    docker run --name dotnet-wechaty -e Wechaty_Token="your token" -d --restart=always registry.cn-shanghai.aliyuncs.com/wechaty/dotnet-wechaty
+    docker run --name dotnet-wechaty -e Wechaty_Token="your token" -e TZ='Asia/Shanghai' -d --restart=always registry.cn-shanghai.aliyuncs.com/wechaty/dotnet-wechaty
     ```
