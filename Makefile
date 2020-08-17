@@ -23,4 +23,4 @@ build:
 
 .PHONY: run
 run:
-	dotnet run wechaty-getting-started/wechaty-getting-started.csproj
+	dotnet run -project wechaty-getting-started/wechaty-getting-started.csproj
