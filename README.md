@@ -26,4 +26,11 @@
     ```
 
 * 三、通过Docker启动
-     通过`launchSettings.json`设置调试环境变量
+     
+    1、通过`launchSettings.json`设置调试环境变量
+
+    2、通过已经上传的docker镜像运行
+    ```
+    docker pull registry.cn-shanghai.aliyuncs.com/wechaty/dotnet-wechaty
+    docker run --name dotnet-wechaty -e Wechaty_Token="your token" -d --restart=always registry.cn-shanghai.aliyuncs.com/wechaty/dotnet-wechaty
+    ```
