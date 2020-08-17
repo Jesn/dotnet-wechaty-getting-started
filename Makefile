@@ -1,11 +1,12 @@
 .PHONY: all
-all : install clean restore build publish
+all :  clean restore build publish
 
 .PHONY: install
 install:
-	wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
-	sudo dpkg -i packages-microsoft-prod.deb
-	echo  dotnet --version
+#	wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+#	sudo dpkg -i packages-microsoft-prod.deb
+#	echo dotnet --version
+	echo "install .net core sdk https://docs.microsoft.com/en-us/dotnet/core/install/"
 
 .PHONY: clean
 clean:
