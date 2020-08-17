@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "wechaty-getting-started": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}
