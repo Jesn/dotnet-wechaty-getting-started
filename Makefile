@@ -17,7 +17,7 @@ restore:
 build: 
 	dotnet build
 
-.PHONY: publish
+#.PHONY: publish
 #publish:
 #	dotnet publish -c Release -r linux-x64
 
