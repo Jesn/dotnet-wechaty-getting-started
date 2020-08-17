@@ -1,5 +1,5 @@
 .PHONY: all
-all :  clean restore build run
+all : install clean restore build run
 
 .PHONY: install
 install:
