@@ -1,11 +1,8 @@
 .PHONY: all
-all :  clean restore build publish
+all :  clean restore build run
 
 .PHONY: install
 install:
-#	wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
-#	sudo dpkg -i packages-microsoft-prod.deb
-#	echo dotnet --version
 	echo "install .net core sdk https://docs.microsoft.com/en-us/dotnet/core/install/"
 
 .PHONY: clean
@@ -21,10 +18,9 @@ build:
 	dotnet build
 
 .PHONY: publish
-publish:
-	dotnet publish -c Release -r linux-x64
-	warp-packer --arch linux-x64 --input_dir bin/Release/netcoreapp3.1/linux-x64/publish --exec made --output made
+#publish:
+#	dotnet publish -c Release -r linux-x64
 
 .PHONY: run
 run:
-	dotnet run
+	dotnet run wechaty-getting-started/wechaty-getting-started.csproj
